@@ -28,5 +28,5 @@ cp ./toggle-magic-mouse.sh ~/bin/
 
 #### Add the following to your .bashrc/.zshrc file
 ```bash
-export MS_MAC_ACCRESS="{{YOUR_MAC_ACCRESS}}"
+export MS_MAC_ADDRESS="{{YOUR_MAC_ADDRESS}}"
 ```
