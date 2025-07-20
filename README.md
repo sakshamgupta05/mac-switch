@@ -29,4 +29,7 @@ cp ./toggle-magic-mouse.sh ~/bin/
 #### Add the following to your .bashrc/.zshrc file
 ```bash
 export MS_MAC_ADDRESS="{{YOUR_MAC_ADDRESS}}"
+
+# Also add bin to path if not there
+export PATH=$PATH:~/bin
 ```
