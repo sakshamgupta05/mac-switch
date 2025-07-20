@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
-# MM="AA:BB:CC:DD:EE:FF"  # ← your mouse’s MAC
-# if blueutil --is-connected "$MM"; then
-#   echo "Disconnecting $MM"
-#   blueutil --disconnect "$MM"
-# else
-#   echo "Connecting $MM"
-#   blueutil --connect    "$MM"
-# fi
 
-MM="${MS_MAC_ADDRESS}"
+# ensure brew dirs are in PATH even in Shortcuts/Automator
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+MM="<<MAC_ADDRESS>>"
+
 res=$(blueutil --is-connected "$MM")
 if [[ "$res" = '1' ]]
 then
